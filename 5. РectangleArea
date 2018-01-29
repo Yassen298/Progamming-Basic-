@@ -1,0 +1,16 @@
+using System;
+
+namespace lice_pravoygylnik
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var a = decimal.Parse(Console.ReadLine());
+            var b = decimal.Parse(Console.ReadLine());
+            Console.WriteLine(a * b);
+            // TODO: calculate the area and print it
+        }
+    }
+}
+
