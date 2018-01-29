@@ -1,0 +1,15 @@
+using System;
+
+namespace beepTest2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1000; i <= 20000; i += 200)
+            {
+                Console.Beep(i, 100);
+            }
+        }
+    }
+}
