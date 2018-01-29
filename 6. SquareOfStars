@@ -1,0 +1,32 @@
+using System;
+
+namespace SquareOfStars
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = a - 2;
+            if (2 <= a)
+                if (a <= 100)
+                {
+                    Console.WriteLine(new string('*', a));
+                    for (a = 1; a <= b; a++)
+                    {
+                        Console.Write("*");
+                        Console.Write(new string(' ', b));
+                        Console.Write("*");
+                        Console.WriteLine();
+                    }
+                    Console.WriteLine(new string('*', a + 1));
+                }
+                else
+                {
+                    Console.WriteLine("Error");
+                }
+
+
+        }
+    }
+}
