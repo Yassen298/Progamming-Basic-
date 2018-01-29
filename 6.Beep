@@ -1,0 +1,13 @@
+using System;
+
+namespace beepTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Beep(3000, 2000);
+            // Beep at 3000 Hz for 2 second
+        }
+    }
+}
