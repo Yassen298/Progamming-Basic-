@@ -1,5 +1,5 @@
 using System;
-namespace ConsoleApp20nov2017
+namespace NumericExpression
 {
     class Program
     {
