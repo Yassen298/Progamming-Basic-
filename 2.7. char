@@ -1,0 +1,13 @@
+using System;
+
+namespace CharTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {           
+            char symbol  = '\u006F'; 
+            Console.WriteLine(symbol);
+        }
+    }
+}
