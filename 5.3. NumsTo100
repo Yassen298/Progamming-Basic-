@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Solution2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number= int.Parse(Console.ReadLine());
+            if ((number >= 0) && (number <= 100))
+            {
+                // Console.WriteLine(numbers[i]);
+                int lastDigit = number % 10;
+                int firstDigit = (number / 10)%10;
+                string text = "";
+                if (number >= 10 && number < 20)
+                {
+                    switch (lastDigit)
+                    {
+                        case 0: text += "ten"; break;
+                        case 1: text += "eleven"; break;
+                        case 2: text += "twelve"; break;
+                        case 3: text += "thirteen"; break;
+                        case 4: text += "fourteen"; break;
+                        case 5: text += "fifteen"; break;
+                        case 6: text += "sixteen"; break;
+                        case 7: text += "seventeen"; break;
+                        case 8: text += "eighteen"; break;
+                        case 9: text += "nineteen"; break;
+                    }
+                    Console.WriteLine(text);
+                    return;
+                }
+                if (number == 0) { Console.WriteLine("zero"); return; }
+                if (number == 100) { Console.WriteLine("one hundred"); return; } 
+                if (firstDigit>=2)
+                {
+                    switch (firstDigit)
+                    {
+                       // case 1: text += "one"; break;
+                        case 2: text += "twenty"; break;
+                        case 3: text += "thirty"; break;
+                        case 4: text += "fourty"; break;
+                        case 5: text += "fifty"; break;
+                        case 6: text += "sixty"; break;
+                        case 7: text += "seventy"; break;
+                        case 8: text += "eighty"; break;
+                        case 9: text += "ninety"; break;
+                    }
+                    if (lastDigit != 0)
+                    {
+                        text += ' ';
+                        
+                    }
+                }
+               
+            switch (lastDigit)
+                {
+                    case 1:text += "one";break;
+                    case 2: text += "two"; break;
+                    case 3: text += "three"; break;
+                    case 4: text += "four"; break;
+                    case 5: text += "five"; break;
+                    case 6: text += "six"; break;
+                    case 7: text += "seven"; break;
+                    case 8: text += "eight"; break;
+                    case 9: text += "nine"; break;
+                }
+              
+
+                Console.WriteLine(text);
+            }
+            else
+                Console.WriteLine("Invalid number");   
+        }
+    }
+}
