@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace KonvektorZaaMerniEdinici
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var num = double.Parse(Console.ReadLine());
+            var Input = Console.ReadLine();
+            var Output = Console.ReadLine();
+            //Ot vhodove do metri
+            if (Input == "km")
+                { num = num / 0.001; }
+            if (Input == "mm")
+                { num = num / 1000; }
+            if (Input == "cm")
+            { num = num / 100; }
+            if (Input == "mi")
+            { num = num / 0.000621371192; }
+            if (Input == "in")
+            { num = num / 39.3700787; }
+            if (Input == "ft")
+            { num = num / 3.2808399; }
+            if (Input  == "yd")
+            { num = num / 1.0936133; }
+            //Ot metri do izhodi
+            if (Output=="mm")
+            { num = num*1000; }
+            if (Output=="cm")
+            { num = num * 100; }
+            if (Output=="mi")
+            { num = num * 0.000621371192; }
+            if (Output=="in")
+            { num = num * 39.3700787; }
+            if (Output=="km")
+            { num = num * 0.001; }
+            if(Output=="ft")
+            { num = num * 3.2808399; }
+            if (Output=="yd")
+            { num = num * 1.0936133; }
+            Console.WriteLine(num + " " + Output);
+        }
+    }
+}
