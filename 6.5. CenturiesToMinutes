@@ -1,0 +1,19 @@
+using System;
+
+namespace zad_tip_danni
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Centuries = ");
+            byte centuries = byte.Parse(Console.ReadLine());
+            ushort years =(ushort) (centuries * 100);
+            uint days = (uint)(years * 365.2422);
+            uint hours = 24 * days;
+            ulong minutes = 60 * hours;
+            Console.WriteLine("{0} centuries = {1} years = {2} days = {3} hours = {4} minutes", centuries, years, days, hours, minutes);
+
+        }
+    }
+}
