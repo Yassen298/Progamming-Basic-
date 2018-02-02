@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SumOfSeconds
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var a = int.Parse(Console.ReadLine());
+            var b = int.Parse(Console.ReadLine());
+            var c = int.Parse(Console.ReadLine());
+            var fullTime = a + b + c;
+            var mins = fullTime / 60;
+            var sec = fullTime % 60;
+            if (sec < 10)
+            {
+                Console.WriteLine(mins + ":" + "0" + sec);
+            }
+            else
+            {
+                Console.WriteLine(mins + ":" + sec);
+            }
+        }
+    }
+}
