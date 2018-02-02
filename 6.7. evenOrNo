@@ -1,0 +1,18 @@
+public class BoolTest
+{
+    static void Main()
+    {
+        bool b = true;
+        Console.WriteLine(b);
+        int days = DateTime.Now.DayOfYear;     
+        b = (days % 2 == 0);
+        if (b)
+        {
+            Console.WriteLine("days is an even number");
+        }
+        else
+        {
+            Console.WriteLine("days is an odd number");
+        }   
+    }
+}
